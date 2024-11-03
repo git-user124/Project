@@ -14,21 +14,6 @@ header {
     align-items: center;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-    nav a {
-        padding: 10px;
-    }
-
-}
-
 header .company {
     font-size: 24px;
     font-weight: bold;
