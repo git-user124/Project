@@ -1,5 +1,5 @@
 body {
-    font-family: 'Harrington';
+    font-family: 'Harrington', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e9cf5e;
@@ -9,8 +9,24 @@ header {
     background: #f8c1c1;
     padding: 10px 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav a {
+        padding: 10px;
+    }
+
 }
 
 header .company {
@@ -71,7 +87,7 @@ h2 {
 section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 70%;
     background: #f8c1c1;
     border-radius: 10px;
     box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.1);
